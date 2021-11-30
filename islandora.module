@@ -536,3 +536,17 @@ function islandora_preprocess_views_view_table(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ */
+function islandora_theme() {
+  // If homepage is not manually set, use the default.
+  $theme['welcome'] = [
+    'variables' => ['name' => NULL],
+    'template' => 'welcome',
+  ];
+
+  return $theme;
+}
