@@ -110,7 +110,7 @@ islandora.confirm_delete_media_and_file:
     _permission: 'administer media+delete any media'
 
 islandora.welcome:
-  path: '/welcome'
+  path: '/islandora_welcome'
   defaults:
     _controller: '\Drupal\islandora\Controller\HomeController::welcome'
     _title: 'Welcome to Islandora'
